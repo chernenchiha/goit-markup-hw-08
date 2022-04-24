@@ -1,0 +1,41 @@
+.methodology {
+    padding-bottom: 0;
+    --card-item: 1;
+}
+
+.methodology-icon-container {
+    display: flex;
+    margin-bottom: 30px;
+    height: 120px; 
+    background-color: var(--secondary-background-color);
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+}
+
+.methodology-subtitle {
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+
+@media screen and (min-width: 768px) {
+    .methodology {
+        padding-bottom: 0;
+        --card-item: 2;
+    }
+    .methodology-icon-container {
+        margin-bottom: 30px;
+        height: 120px; 
+}
+}
+
+
+@media screen and (min-width: 1200px) {
+    .methodology {
+        padding-bottom: 0;
+        --card-item: 4;
+    }  
+}

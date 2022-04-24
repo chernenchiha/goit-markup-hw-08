@@ -1,0 +1,114 @@
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: var(--footer-background-color);
+}
+
+.footer-container {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer-container-item:not(:last-child){
+    margin-right: 70px;
+}
+
+.footer-container-item:last-child {
+    margin-left: auto;
+}
+
+.footer .logo {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.logo-footer {
+    color: var(--white-text-color);
+}
+
+
+.address {
+    font-style: inherit;
+}
+
+.address-link {
+    color: var(--light-grey-rgba); 
+    transition: color var(--time-animation) var(--time-distribution);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}
+
+.address-link[target="_blank"] {
+    color: var(--white-text-color);
+}
+
+.address-list .address-item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.footer-form-slogan {
+    display: block;
+    margin-bottom: 20px;
+
+    color: var(--white-text-color);
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 1.14;
+
+}
+
+.footer-icon {
+    fill: var(--white-text-color);
+    transition: background-color var(--time-animation) var(--time-distribution);
+}
+
+.footer-icon-link {
+    background: rgba(255, 255, 255, 0.1);
+    transition: background-color var(--time-animation) var(--time-distribution);
+
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+    }
+}
+
+.footer-form {
+    display: flex;
+}
+
+.footer-form-label {
+    display: block;
+    margin-right: 12px;
+    
+}
+
+.footer-form-input {
+    padding: 15px;
+    width: 358px;
+    height: 50px;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: transparent;
+
+    &::placeholder {
+        display: block;
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);
+    }
+    
+    &:not(:placeholder-shown){
+    color: var(--white-background-color);
+    }
+}
+
+
+.footer-form-icon {
+    margin-left: 10px;
+}
