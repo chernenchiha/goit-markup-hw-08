@@ -1,23 +1,32 @@
+   @media screen and (max-width: 1199px) {
+        .activity {
+            display: none;
+        }
+   }
+   
+  
 
-.item-img {
-    position: relative;
-}
+@media screen and (min-width: 1200px) {
+        .item-img {
+        position: relative;
+    }
 
-.activity-description {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
+    .activity-description {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
 
 
-    display: block;
-    padding-top: 27px;
-    padding-bottom: 27px;
-    
-    text-transform: uppercase;
-    font-weight: 700;
-    line-height: 1.14;
-    text-align: center;
-    color: var(--white-text-color);
-    background-color: var(--bg-color-activity-wrraper);
+        display: block;
+        padding-top: 27px;
+        padding-bottom: 27px;
+        
+        text-transform: uppercase;
+        font-weight: 700;
+        line-height: 1.14;
+        text-align: center;
+        color: var(--white-text-color);
+        background-color: var(--bg-color-activity-wrraper);
+    }
 }

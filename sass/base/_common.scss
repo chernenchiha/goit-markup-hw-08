@@ -36,15 +36,33 @@ img {
 }
 
 .section {
-    padding-bottom: 94px;
-    padding-top: 94px;
+    padding-bottom: 60px;
+    padding-top: 60px;
 }
 
 .section-title {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 
-    font-size: 36px;
-    line-height: 1.17;
+    font-size: 28px;
+    line-height: 1.18;
     text-align: center;
     color: var(--title-text-color);
 }
+
+@media screen and (min-width: 767px) {
+    .section {
+        padding-bottom: 94px;
+        padding-top: 94px;
+    }
+
+    .section-title {
+        margin-bottom: 50px;
+    
+        font-size: 36px;
+        line-height: 1.17;
+    }
+}
+
+
+
+

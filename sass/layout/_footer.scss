@@ -3,23 +3,62 @@
     padding-bottom: 60px;
     background-color: var(--footer-background-color);
 }
-
-.footer-container {
-    display: flex;
-    align-items: baseline;
-}
-
-.footer-container-item:not(:last-child){
-    margin-right: 70px;
-}
-
-.footer-container-item:last-child {
-    margin-left: auto;
-}
-
 .footer .logo {
     display: block;
     margin-bottom: 20px;
+}
+
+.footer-form-slogan {
+    display: block;
+    margin-bottom: 20px;
+
+    color: var(--white-text-color);
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 1.14;
+
+}
+
+@media screen and (max-width: 767px) {
+    .footer-container {
+        display: block;
+        text-align: center;
+    }
+    
+    .address-list .address-item:not(:last-child) {
+        margin-bottom: 8px;
+    }
+
+    .address-list {
+        margin-bottom: 60px;
+    }
+
+    .footer-container-item .social-list{
+        // margin-right: auto;
+        // margin-left: auto;
+        margin-bottom: 60px;
+    }
+
+    .footer-container-item .social-item{
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-container-item .main-btn {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .footer-form-label {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .footer-container {
+        display: flex;
+    }
+
 }
 
 .logo-footer {
@@ -30,6 +69,39 @@
 .address {
     font-style: inherit;
 }
+
+@media screen and (min-width: 1200px) {
+    .footer-container {
+        display: flex;
+        align-items: baseline;
+    }
+    
+    .footer-container-item:not(:last-child){
+    margin-right: 70px;
+    }
+
+    .footer-container-item:last-child {
+        margin-left: auto;
+    }
+
+    .address-list .address-item:not(:last-child) {
+        margin-bottom: 9px;
+    }
+    
+    .footer-form {
+    display: flex;
+}
+}
+
+
+
+
+
+
+
+
+
+
 
 .address-link {
     color: var(--light-grey-rgba); 
@@ -45,20 +117,9 @@
     color: var(--white-text-color);
 }
 
-.address-list .address-item:not(:last-child) {
-    margin-bottom: 9px;
-}
 
-.footer-form-slogan {
-    display: block;
-    margin-bottom: 20px;
 
-    color: var(--white-text-color);
-    text-transform: uppercase;
-    font-size: 14px;
-    line-height: 1.14;
 
-}
 
 .footer-icon {
     fill: var(--white-text-color);
@@ -75,14 +136,11 @@
     }
 }
 
-.footer-form {
-    display: flex;
-}
+
 
 .footer-form-label {
     display: block;
     margin-right: 12px;
-    
 }
 
 .footer-form-input {

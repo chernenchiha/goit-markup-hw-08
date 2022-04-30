@@ -1,10 +1,7 @@
+
 .team {
     background-color: var(--secondary-background-color);
     text-align: center;
-}
-
-.team-name {
-    font-weight: 500;
 }
 
 .team-name,
@@ -13,8 +10,44 @@
     line-height: 1.19;
 }
 
+.team-name {
+    font-weight: 500;
+}
+
+
+.team-wrapper {
+    padding: 30px;
+}
+
+.team-item {
+        --card-item: 1;
+        background: #FFFFFF;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
+}
+
+
+
+.team-icon {
+    fill: currentColor;
+}
+
 .team-text {
     margin-bottom: 16px;
+}
+
+
+.team-icon-link {
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--icon-color);
+    transition: color var(--time-animation) var(--time-distribution), background-color var(--time-animation) var(--time-distribution);
+
+    &:hover,
+    &:focus {
+        color: var(--white-text-color);   
+        background-color: var(--accent-color);
+    }
 }
 
 .social-list {
@@ -28,30 +61,14 @@
     margin-top: 10px;
 }
 
-.team-icon {
-    fill: currentColor;
+@media screen and (min-width: 768px) {
+    .team-item {
+        --card-item: 2;
+}
 }
 
-
-
-.team-icon-link {
-    color: var(--icon-color);
-    transition: color var(--time-animation) var(--time-distribution), background-color var(--time-animation) var(--time-distribution);
-
-    &:hover,
-    &:focus {
-        color: var(--white-text-color);   
-        background-color: var(--accent-color);
-    }
+@media screen and (min-width: 1200px) {
+    .team-item {
+        --card-item: 4;
 }
-
-.team-item {
-    --card-item: 4;
-    background: #FFFFFF;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
-}
-
-.team-wrapper {
-    padding: 30px;
 }
