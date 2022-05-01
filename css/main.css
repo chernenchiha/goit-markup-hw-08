@@ -211,8 +211,9 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1.1);
-  width: 410px;
-  height: 609px;
+  max-width: 450px;
+  width: 100%;
+  min-height: 609px;
   padding: 40px;
   background-color: var(--white-background-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -474,9 +475,15 @@ img {
 
 .mobile-menu__social-list {
   display: flex;
+  flex-wrap: wrap;
+  margin-top: -20px;
+  margin-left: -20px;
 }
 
 .mobile-menu__social-item {
+  margin-top: 20px;
+  margin-left: 20px;
+  padding-right: 10px;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.22;
@@ -485,7 +492,7 @@ img {
 }
 
 .mobile-menu__social-item:not(:last-child) {
-  margin-right: 20px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 .current-link {
@@ -808,8 +815,22 @@ img {
   }
 }
 
-.clients__list {
-  --card-item: 6;
+@media screen and (max-width: 767px) {
+  .clients {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .clients__list {
+    --card-item: 3;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients__list {
+    --card-item: 6;
+  }
 }
 
 .clients-icon {
@@ -861,9 +882,6 @@ img {
   .address-list .address-item:not(:last-child) {
     margin-bottom: 8px;
   }
-  .address-list {
-    margin-bottom: 60px;
-  }
   .footer-container-item .social-list {
     margin-bottom: 60px;
   }
@@ -875,6 +893,9 @@ img {
     margin-left: auto;
     margin-right: auto;
   }
+  .footer-container-item:not(:last-child) {
+    margin-bottom: 60px;
+  }
   .footer-form-label {
     margin-bottom: 20px;
   }
@@ -883,6 +904,26 @@ img {
 @media screen and (min-width: 768px) {
   .footer-container {
     display: flex;
+    flex-direction: column;
+  }
+  .footer-wrapper {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+    margin-bottom: 60px;
+  }
+  .address-item {
+    margin-bottom: 8px;
+  }
+  .footer-container-item .main-btn {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .footer-container-item {
+    text-align: center;
+  }
+  .footer-form-label {
+    margin-bottom: 20px;
   }
 }
 
@@ -895,6 +936,10 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
+  .footer-container {
+    display: flex;
+    flex-direction: row;
+  }
   .footer-container {
     display: flex;
     align-items: baseline;
@@ -910,6 +955,9 @@ img {
   }
   .footer-form {
     display: flex;
+  }
+  .footer-container-item {
+    text-align: left;
   }
 }
 

@@ -108,9 +108,15 @@
 
 .mobile-menu__social-list {
     display: flex;
+    flex-wrap: wrap;
+    margin-top: -20px;
+    margin-left: -20px;
 }
 
-.mobile-menu__social-item {
+.mobile-menu__social-item { 
+    margin-top: 20px;
+    margin-left: 20px;
+    padding-right: 10px;
     font-weight: 500;
     font-size: 18px;
     line-height: 1.22;
@@ -118,7 +124,7 @@
     color: var(--accent-color);
 
     &:not(:last-child) {
-        margin-right: 20px;
+        border-right: 1px solid rgba(33, 33, 33, 0.2);
     }
 }
 
