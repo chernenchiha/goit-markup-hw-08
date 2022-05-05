@@ -5,7 +5,7 @@
   
     text-align: center;
     background-color: var(--footer-background-color);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(.././../images/mobile/studio/bg-mobile.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/studio/bg-mobile.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -14,7 +14,7 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
       .hero {
-          background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(.././../images/mobile/studio/bg-mobile@2x.jpg);
+          background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/studio/bg-mobile@2x.jpg);
       }
   }
 
@@ -33,7 +33,7 @@
     .hero {
         padding-top: 200px;
         padding-bottom: 200px;
-        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(.././../images/tablet/studio/bg-tablet.jpg);
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet/studio/bg-tablet.jpg);
     }
 
     @media (min-device-pixel-ratio: 2),

@@ -2,11 +2,13 @@
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
+    margin-top: -15px;
+    margin-left: -8px;
     margin-bottom: 40px;
 
-    & .item-list:not(:last-child) {
-        margin-right: 8px;
-        margin-bottom: 15px;
+    & .item-list {
+        margin-left: 8px;
+        margin-top: 15px;
     }
 }
 
@@ -23,6 +25,12 @@
 
     .section-portfolio .card-item {
         --card-item: 2;
+    }
+
+    .works-wrraper .works-title {
+        font-size: 18px;
+        letter-spacing: 0.06em;
+        line-height: 2;
     }
 }
 
@@ -72,6 +80,7 @@
 .works-link {
     display: block;
     transition: box-shadow var(--time-animation) var(--time-distribution);
+    height: 100%;
 
     &:hover,
     &:focus {
@@ -83,6 +92,7 @@
 
 .works-wrraper  {
     padding: 20px 24px;
+    flex-grow: 1;
    
     border: 1px solid #EEEEEE;
     border-top: none;
@@ -104,6 +114,9 @@
 
 .works-card-overlay {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .works-img-overlay {

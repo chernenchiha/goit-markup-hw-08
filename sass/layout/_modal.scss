@@ -154,12 +154,15 @@
 }
 
 .form-checkbox-label {
+    display: flex;
+    align-items: center;
     font-size: 12px;
     line-height: 1.17;
     
     &::before {
         display: inline-block;
         margin-right: 10px;
+        flex-shrink: 0;
         width: 16px;
         height: 15px; 
         content: '';
@@ -192,9 +195,9 @@
         min-height: 581px;
 }
 
-.form-checkbox-label {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+// .form-checkbox-label {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+// }
 }
