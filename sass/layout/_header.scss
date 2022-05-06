@@ -45,7 +45,7 @@
     flex-direction: column;
     justify-content: space-between;
 
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     width: 100%;
@@ -223,8 +223,8 @@
     @media screen and (min-width: 1200px) {
         .container-header {
             align-items: baseline;
-            padding-top: 32px;
-            padding-right: 32px;
+            padding-top: 24px;
+            padding-right: 24px;
         }
         
         .header .logo {

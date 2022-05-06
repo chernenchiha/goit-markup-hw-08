@@ -570,8 +570,8 @@ img {
 @media screen and (min-width: 1200px) {
   .container-header {
     align-items: baseline;
-    padding-top: 32px;
-    padding-right: 32px;
+    padding-top: 24px;
+    padding-right: 24px;
   }
   .header .logo {
     margin-right: 93px;
@@ -660,7 +660,7 @@ img {
 
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(.././../images/tablet/studio/bg-tablet@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet/studio/bg-tablet@2x.jpg);
   }
 }
 
@@ -672,14 +672,14 @@ img {
     line-height: 1.36;
   }
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(.././../images/desktop/studio/bg-desktop.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/desktop/studio/bg-desktop.jpg);
     background-position: center;
   }
 }
 
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(.././../images/desktop/studio/bg-desktop@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/desktop/studio/bg-desktop@2x.jpg);
     background-position: center;
   }
 }
@@ -971,7 +971,6 @@ img {
     display: flex;
     align-items: baseline;
     justify-content: space-around;
-    margin-bottom: 60px;
   }
   .address-list .address-item:not(:last-child) {
     margin-bottom: 8px;
@@ -983,9 +982,6 @@ img {
   .footer-container-item {
     text-align: center;
   }
-  .footer-form-label {
-    margin-bottom: 20px;
-  }
 }
 
 .logo-footer {
@@ -994,6 +990,15 @@ img {
 
 .address {
   font-style: inherit;
+}
+
+@media screen and (max-width: 1199px) {
+  .footer-wrapper {
+    margin-bottom: 60px;
+  }
+  .footer-form-label {
+    margin-bottom: 20px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1019,6 +1024,10 @@ img {
   }
   .footer-container-item {
     text-align: left;
+  }
+  .footer-form-input {
+    width: 358px;
+    max-width: 358px;
   }
 }
 
