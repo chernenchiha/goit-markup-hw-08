@@ -55,7 +55,6 @@
 
 .footer-form-label {
     display: block;
-    margin-right: 12px;
 }
 
 .footer-form-input {
@@ -208,5 +207,9 @@
     .footer-form-input {
         width: 358px;
         max-width: 358px;
+    }
+
+    .footer-form-label {   
+    margin-right: 12px;
     }
 }
